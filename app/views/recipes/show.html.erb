@@ -1,0 +1,16 @@
+<section class="show-page">
+  <div class="image-div">
+    <%= image_tag(@recipe.image, :size => "400x300") %>
+  </div>
+  <div class="content-div">
+    <ul>
+      <li><u>Title:</u> <b><%= @recipe.title %></b>
+      <li><u>Description:</u> <%= @recipe.description %></b>
+      <li><u>List of Tags:</u> <%= @recipe.tags&.join(', ') %>
+      <li><u>Chef name:</u> <%= @recipe.chef&.name %>
+    </ul>
+  </div>
+</section>
+<div class='back-button'>
+  <%= link_to '< Back', root_path %>
+<div
