@@ -5,8 +5,8 @@ class Recipe
   def initialize(id, title, image, description = nil, chef = nil, tags = nil)
     @id = id
     @title = title
-    @description = description
     @image = image
+    @description = description if description.present?
     @chef = Chef.new(chef) if chef.present?
     @tags = tags.each { |tag| Tag.new(tag) } if tags.present?
   end
