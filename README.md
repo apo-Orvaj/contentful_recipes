@@ -25,8 +25,7 @@ rspec
 - Ruby version 2.3.1
 - Rails version 5.1.7
 - Postgres
-- RSpec
-- Bundler version 2.0.1
+- Bundler version 1.15.4
 
 ### Gems used
 - gem 'contentful' -> Ruby SDK for the Contentful
